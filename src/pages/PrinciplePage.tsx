@@ -17,7 +17,7 @@ export function PrinciplePage() {
 
   return (
     <Frame>
-      <Link to="/" className="w-fit text-base underline decoration-ink/30 underline-offset-4">
+      <Link to="/" className="back w-fit">
         返回
       </Link>
       <h1 className="mt-8 font-serif text-[2.25rem] leading-tight font-medium">{recipe.name}</h1>

@@ -170,7 +170,7 @@ function CookStep({ recipe, index }: { recipe: Recipe; index: number }) {
         <Plate dish={recipe.id} visual={visual} settled={false} />
       </div>
       <h1 className="mt-4 text-[1.65rem] leading-snug font-medium">{step.title}</h1>
-      <p className="mt-3 text-lg leading-relaxed">{step.detail}</p>
+      <p className="mt-3 min-h-[3.7rem] text-lg leading-relaxed">{step.detail}</p>
       <StepTimer
         remaining={timer.remaining}
         duration={timer.duration}
@@ -198,10 +198,7 @@ function StageHeader({
 }) {
   return (
     <div className="flex items-baseline justify-between gap-4">
-      <Link
-        to={`/cook/${recipe.id}`}
-        className="text-base underline decoration-ink/30 underline-offset-4"
-      >
+      <Link to={`/cook/${recipe.id}`} className="back">
         返回
       </Link>
       <p className="text-base">

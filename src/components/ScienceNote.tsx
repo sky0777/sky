@@ -7,7 +7,7 @@ export function ScienceNote({ detail }: { detail: string }) {
     <div className="border-t border-ink/15 pt-4">
       <button
         type="button"
-        className="flex w-full items-baseline justify-between gap-4 text-left"
+        className="flex min-h-11 w-full items-center justify-between gap-4 text-left"
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
       >

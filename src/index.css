@@ -86,7 +86,20 @@ body {
 
 .ghost:disabled {
   cursor: default;
-  opacity: 0.35;
+  opacity: 0.55;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding-inline: 0.5rem;
+  font-size: 1rem;
+  text-underline-offset: 4px;
+  text-decoration-line: underline;
+  text-decoration-color: color-mix(in srgb, var(--color-ink) 30%, transparent);
 }
 
 .action:active,
